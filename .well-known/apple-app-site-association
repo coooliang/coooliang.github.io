@@ -3,7 +3,7 @@
         "apps":[],
         "details":[
             {
-                "paths":["*","/ApkDownloadTest/*"],
+                "paths":["*"],
                 "appID":"Q73B5CFCV3.com.wallet.dbkfly"
             }
         ]
