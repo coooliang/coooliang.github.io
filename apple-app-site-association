@@ -1,0 +1,11 @@
+{
+    "applinks":{
+        "apps":[],
+        "details":[
+            {
+                "paths":["*","/ApkDownloadTest/*"],
+                "appID":"Q73B5CFCV3.com.wallet.dbkfly"
+            }
+        ]
+    }
+}
