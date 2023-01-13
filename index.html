@@ -12,6 +12,32 @@
 <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
+<!-- <script src="http://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script> -->
+<script>
+  if(wx){
+    try {
+      wx.ready(function () {   //需在用户可能点击分享按钮前就先调用
+      wx.updateAppMessageShareData({ 
+        title: '钱大掌柜', // 分享标题
+        desc: '理财，爱上钱大掌柜', // 分享描述
+        link: '', // 分享链接，该链接域名或路径必须与当前页面对应的公众号 JS 安全域名一致
+        imgUrl: 'https://coooliang.github.io/images/avatar.png?v=1555569317272', // 分享图标
+        success: function () {
+          
+        }
+      })
+    }); 
+    } catch (error) {
+      
+    }
+
+  }
+  
+</script>
+
+
+
+
   </head>
   <body>
     <div class="main">
