@@ -1,161 +1,123 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gridea</title>
-<link rel="shortcut icon" href="https://coooliang.github.io/favicon.ico?v=1555569317272">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://coooliang.github.io/styles/main.css">
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gridea</title>
+  <link rel="shortcut icon" href="https://coooliang.github.io/favicon.ico?v=1555569317272">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://coooliang.github.io/styles/main.css">
 
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
-<script src="http://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
-<script>
-  if(wx){
-    try {
-      wx.ready(function () {   //需在用户可能点击分享按钮前就先调用
-      wx.updateAppMessageShareData({ 
-        title: '钱大掌柜', // 分享标题
-        desc: '理财，爱上钱大掌柜', // 分享描述
-        link: '', // 分享链接，该链接域名或路径必须与当前页面对应的公众号 JS 安全域名一致
-        imgUrl: 'https://coooliang.github.io/images/avatar.png?v=1555569317272', // 分享图标
-        success: function () {
-          
+  <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+  <script>
+    $(function () {
+      try {
+        if (wx) {
+          wx.ready(function () {   //需在用户可能点击分享按钮前就先调用
+            wx.updateAppMessageShareData({
+              title: '钱大掌柜', // 分享标题
+              desc: '理财，爱上钱大掌柜', // 分享描述
+              link: '', // 分享链接，该链接域名或路径必须与当前页面对应的公众号 JS 安全域名一致
+              imgUrl: 'https://coooliang.github.io/images/avatar.png?v=1555569317272', // 分享图标
+              success: function () {
+
+              }
+            })
+          });
         }
-      })
-    }); 
-    } catch (error) {
-      
-    }
+      } catch (error) {
 
-  }
-  
-</script>
+      }
+    });
+  </script>
+</head>
 
-
-
-
-  </head>
-  <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://coooliang.github.io">
-  <img class="avatar" src="https://coooliang.github.io/images/avatar.png?v=1555569317272" alt="">
-  </a>
-  <h1 class="site-title">
-    Gridea
-  </h1>
-  <p class="site-description">
-    温故而知新
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
+<body>
+  <div class="main">
+    <div class="main-content">
+      <div class="site-header">
+        <a href="https://coooliang.github.io">
+          <img class="avatar" src="https://coooliang.github.io/images/avatar.png?v=1555569317272" alt="">
         </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/about" class="menu">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
-
-    
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://coooliang.github.io/post/about">
-        <h2 class="post-title">About</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-04-18 ·
-        </time>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://coooliang.github.io/post/hello-gridea">
-        <h2 class="post-title">Hello Gridea</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2018-12-12 ·
-        </time>
-        
-          <a href="https://coooliang.github.io/tag/gridea" class="post-tag">
-            # Gridea
+        <h1 class="site-title">
+          Gridea
+        </h1>
+        <p class="site-description">
+          温故而知新
+        </p>
+        <div class="menu-container">
+          <a href="/" class="menu">
+            首页
           </a>
-        
+          <a href="/archives" class="menu">
+            归档
+          </a>
+          <a href="/tags" class="menu">
+            标签
+          </a>
+          <a href="/about" class="menu">
+            关于
+          </a>
+        </div>
+        <div class="social-container">
+        </div>
       </div>
-      
-        <a href="https://coooliang.github.io/post/hello-gridea" class="post-feature-image" style="background-image: url('https://coooliang.github.io/post-images/hello-gridea.png')">
-        </a>
-      
-      <div class="post-abstract">
-        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+      <div class="post-container">
+        <article class="post">
+          <a href="https://coooliang.github.io/post/about">
+            <h2 class="post-title">About</h2>
+          </a>
+          <div class="post-info">
+            <time class="post-time">
+              · 2019-04-18 ·
+            </time>
+          </div>
+          <div class="post-abstract">
+            </di>
+        </article>
 
-      </di>
-    </article>
-  
-</div>
+        <article class="post">
+          <a href="https://coooliang.github.io/post/hello-gridea">
+            <h2 class="post-title">Hello Gridea</h2>
+          </a>
+          <div class="post-info">
+            <time class="post-time">
+              · 2018-12-12 ·
+            </time>
 
-    
-        <div class="pagination-container">
-  
-  
-</div>
+            <a href="https://coooliang.github.io/tag/gridea" class="post-tag">
+              # Gridea
+            </a>
 
-    
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-</div>
+          </div>
 
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
+          <a href="https://coooliang.github.io/post/hello-gridea" class="post-feature-image"
+            style="background-image: url('https://coooliang.github.io/post-images/hello-gridea.png')">
+          </a>
 
+          <div class="post-abstract">
+            <p>👏 欢迎使用 <strong>Gridea</strong> ！<br>
+              ✍️ <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+
+            </di>
+        </article>
       </div>
+      <div class="pagination-container">
+      </div>
+      <div class="site-footer">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+      </div>
+      <script>
+        hljs.initHighlightingOnLoad()
+      </script>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
