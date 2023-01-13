@@ -19,17 +19,35 @@
     $(function(){ 
       try {
         if (wx) {
+          wx.config({
+            debug: false, // 正式上线后改成false不在弹出调试信息
+            appId: 'wxa0012a4f29a5291e',
+            timestamp: 1642070615,
+            nonceStr: 'vXt2KxBrLT4hsDIa',
+            signature: 'ed91c871a84783207eab18914036183358d34ede',
+            jsApiList: [
+            'updateAppMessageShareData',
+            'updateTimelineShareData'
+            ]
+          });
           wx.ready(function () {   //需在用户可能点击分享按钮前就先调用
             wx.updateAppMessageShareData({
               title: '钱大掌柜', // 分享标题
               desc: '理财，爱上钱大掌柜', // 分享描述
               link: '', // 分享链接，该链接域名或路径必须与当前页面对应的公众号 JS 安全域名一致
-              imgUrl: 'https://coooliang.github.io/images/avatar.png?v=1555569317272', // 分享图标
+              imgUrl: 'https://coooliang.github.io/images/avatar.png', // 分享图标
               success: function () {
-
+                console.log("success");
               }
             })
           });
+
+
+          wx.error(function(res){
+            // config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新签名。
+            console.log(res);
+          });
+
         }
       } catch (error) {
 
