@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>coooliang</title>
@@ -7,28 +8,87 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="shortcut icon" href="assets/favicon.ico">
-  <link rel="stylesheet" href="assets/vue.css">
-
-  
-
+  <link rel="stylesheet" href="assets/themes/vue.css">
+  <link rel="stylesheet" href="assets/css/sidebar.min.css">
+  <link rel="stylesheet" href="assets/css/gitalk.css">
 </head>
+
 <body>
   <div id="app">加载中</div>
   <script>
     //https://docsify.js.org/#/zh-cn/quickstart
+    //语法高亮
     //https://cdn.jsdelivr.net/npm/prismjs@1/components/
     window.$docsify = {
       search: 'auto', // 默认值
-      name: '',
-      repo: '',
-      loadSidebar: true
+      name: "coooliang",
+      loadSidebar: true,
+      coverpage: true,
+      scrollToTop: {
+        auto: true,
+        icon: 'arrow-up-1',
+        right: 15,
+        bottom: 55,
+        width: 40,
+        height: 40,
+        offset: 450
+      },
+      pagination: {
+        previousText: 'PREV',
+        // or
+        nextText: {
+          '/en/': 'NEXT',
+          '/': 'NEXT'
+        },
+        crossChapter: true,
+        crossChapterText: true,
+      },
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md', // See #301
+      },
+      sidebarTree: {
+        open: false,//def false
+      }
     }
   </script>
-  <script src="assets/docsify.min.js"></script>
-  <script src="assets/search.min.js"></script>
-  <script src="assets/zoom-image.min.js"></script>
-  <script src="assets/docsify-copy-code.js"></script>
-  <script src="assets/countable.js"></script>
-  <script src="assets/prism-objectivec.js"></script>
+
+  <script src="assets/js/docsify.min.js"></script>
+  <script src="assets/js/search.min.js"></script>
+  <script src="assets/js/zoom-image.min.js"></script>
+  <script src="assets/js/docsify-copy-code.js"></script>
+  <script src="assets/js/countable.js"></script>
+  <script src="assets/js/prism-objectivec.js"></script>
+  <script src="assets/js/prism-swift.min.js"></script>
+  <script src="assets/js/prism-bash.min.js"></script>
+  <script src="assets/js/prism-java.min.js"></script>
+  <script src="assets/js/prism-dart.min.js"></script>
+  <script src="assets/js/prism-yaml.min.js"></script>
+  <script src="assets/js/prism-json.min.js"></script>
+  <script src="assets/js/prism-css.min.js"></script>
+  <script src="assets/js/prism-python.min.js"></script>
+  <script src="assets/js/prism-csharp.min.js"></script>
+  <script src="assets/js/prism-batch.min.js"></script>
+  <script src="assets/js/prism-typescript.min.js"></script>
+  <script src="assets/js/prism-properties.min.js"></script>
+  <script src="assets/js/prism-sql.min.js"></script>
+  <script src="assets/js/prism-plsql.min.js"></script>
+  <script src="assets/js/scroll-to-top.js"></script>
+  <script src="assets/js/docsify-pagination.min.js"></script>
+  <script src="assets/js/docsify-sidebar-collapse.js"></script>
+  <script src="assets/js/docsify-gitalk.min.js"></script>
+  <script src="assets/js/gitalk.min.js"></script>
+
+  <script>
+    const gitalk = new Gitalk({
+      clientID: 'Github Application Client ID',
+      clientSecret: 'Github Application Client Secret',
+      repo: 'Github repo',
+      owner: 'Github repo owner',
+      admin: ['Github repo collaborators, only these guys can initialize github issues'],
+      // facebook-like distraction free mode
+      distractionFreeMode: false
+    })
+  </script>
 </body>
+
 </html>
