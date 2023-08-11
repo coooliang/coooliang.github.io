@@ -15,14 +15,19 @@ https://blog.static.run/archives/remove-lvsecurityagent-tutorial
 ![](5.png)
 ![](6.png)
 
-3. 用Vim分别执行下面的命令
+3. 使用Sublime修改以下文件，因为Sublime会自动复制一份再覆盖文件，可以直接修改并保存成功
 
 ```
-sudo vim /Library/LaunchAgents/com.lvmagent.gui.plist
-sudo vim /Library/LaunchAgents/com.lvmagent.gui.plist
-sudo vim /Library/LaunchAgents/com.leagsoft.uniremote.plist
-sudo vim /Library/LaunchDaemons/com.lvmagent.core.plist
+/Library/LaunchAgents/com.leagsoft.uniremote.plist
+/Library/LaunchAgents/com.lvmagent.gui.plist
+/Library/LaunchAgents/com.lvmagent.screen.plist
+
+/Library/LaunchDaemons/com.lvmagent.core.plist
 ```
+
+![](8.png)
+
+将KeepAlive和RunAtLoad都修改为false
 
 ![](7.png)
 
