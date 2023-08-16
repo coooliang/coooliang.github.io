@@ -221,10 +221,11 @@
   - [macOS设置4位数以下密码](article/boring/MacOS设置4位数以下密码.md)
 - 其它技术
   - [macOS下用dnsmasq搭建DNS服务器](article/others/dnsmasq.md)
-  - [Mac系统LVSecurityAgent卸载方法](article/others/lv.md)
+  <!-- - [Mac系统LVSecurityAgent卸载方法](article/others/lv.md) -->
   - [macOS11(Big Sur) MySQL无法启动](article/others/macos11bigsurmysql无法启动.md)
   - [连接远程oracle和SVN服务器客户端的使用](article/others/连接远程oracle和SVN服务器客户端的使用.md)
   - [打补丁时删除.svn的隐藏文件](article/others/打补丁时删除svn的隐藏文件.md)
+  - [macOS删除打开方式中重复的程序列表](article/others/macOS删除打开方式中重复的程序列表.md)
   - [MyEclipse6.5反编译工具安装(jadclipse)](article/others/myeclipse65反编译工具安装jadclipse.md)
   - [【推荐】apidoc api文档生成工具的使用(mac)](article/others/推荐apidocapi文档生成工具的使用mac.md)
 - 作者
