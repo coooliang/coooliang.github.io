@@ -16,7 +16,6 @@ sudo brew services restart dnsmasq
 2. 修改 /usr/local/etc/dnsmasq.conf
 
 ```properties
-
 log-queries
 log-facility=/var/log/dnsmasq.log
 no-hosts
@@ -28,6 +27,33 @@ resolv-file=/etc/resolv.conf
 #联通
 address=/www.yypt.com/12.12.12.12
 address=/www.yypt.com/240E:123:123::12
+
+#所有com域名禁止ipv6查询
+server=/com/8.8.8.8
+address=/com/::
+#所有域名过滤ipv6查询
+server=/#/8.8.8.8
+address=/#/::
 ```
 
-3. 手机设置dns地址为电脑ip
+3./etc/resolv.conf
+
+```properties
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+```
+
+4. 手机设置dns地址为电脑ip，使用NetAnalyzer查看dns
+
+----
+
+
+PS: 查看本机ip地址
+
+```
+alias ip='curl ifconfig.me'
+alias ip2='ifconfig | grep inet | grep -v inet6 | grep -v 127'
+alias ip3='ifconfig | grep inet'
+```
+
+
