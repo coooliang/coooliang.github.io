@@ -36,7 +36,7 @@ server=/#/8.8.8.8
 address=/#/::
 ```
 
-3./etc/resolv.conf
+3. /etc/resolv.conf
 
 ```properties
 nameserver 8.8.8.8
