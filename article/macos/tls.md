@@ -1,6 +1,9 @@
 
 # 查看地址LTS版本(nscurl)
 
+`原创` `2023-09-12 14:08:12`
+
+
 ```
 nscurl --verbose --ats-diagnostics https://mp.weixin.qq.com
 ```
