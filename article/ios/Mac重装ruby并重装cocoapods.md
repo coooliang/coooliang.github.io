@@ -12,4 +12,10 @@ pod --version
 pod search afnetworking
 ```
 
+多repo报错时
+```
+cd /Users/lion/.cocoapods/repos/cocoapods 
+git clone --depth 1 https://github.com/CocoaPods/Specs.git master
+```
+
 
